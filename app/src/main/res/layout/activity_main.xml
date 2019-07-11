@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/BtnUp"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/selector_up"
+        app:layout_constraintBottom_toTopOf="@+id/BtnEnter"
+        app:layout_constraintEnd_toEndOf="@+id/BtnEnter"
+        app:layout_constraintStart_toStartOf="@+id/BtnEnter" />
+
+    <Button
+        android:id="@+id/BtnRight"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/selector_right"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnEnter"
+        app:layout_constraintStart_toEndOf="@+id/BtnEnter"
+        app:layout_constraintTop_toTopOf="@+id/BtnEnter" />
+
+    <Button
+        android:id="@+id/BtnDown"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/selector_down"
+        app:layout_constraintBottom_toTopOf="@+id/BtnMicro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BtnLeft"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/selector_left"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnEnter"
+        app:layout_constraintEnd_toStartOf="@+id/BtnEnter"
+        app:layout_constraintTop_toTopOf="@+id/BtnEnter" />
+
+    <Button
+        android:id="@+id/BtnEnter"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/selector_enter"
+        app:layout_constraintBottom_toTopOf="@+id/BtnDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BtnBack"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/selector_back"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnMicro"
+        app:layout_constraintEnd_toStartOf="@+id/BtnMicro"
+        app:layout_constraintTop_toTopOf="@+id/BtnMicro" />
+
+    <Button
+        android:id="@+id/BtnHome"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/selector_home"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnMicro"
+        app:layout_constraintStart_toEndOf="@+id/BtnMicro"
+        app:layout_constraintTop_toTopOf="@+id/BtnMicro" />
+
+    <Button
+        android:id="@+id/BtnPlayPause"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/selector_play"
+        app:layout_constraintBottom_toTopOf="@+id/BtnUp"
+        app:layout_constraintEnd_toEndOf="@+id/BtnUp"
+        app:layout_constraintStart_toStartOf="@+id/BtnUp" />
+
+    <Button
+        android:id="@+id/BtnNext"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/selector_next"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnPlayPause"
+        app:layout_constraintStart_toEndOf="@+id/BtnPlayPause"
+        app:layout_constraintTop_toTopOf="@+id/BtnPlayPause" />
+
+    <Button
+        android:id="@+id/BtnPrev"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/selector_rewind"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnPlayPause"
+        app:layout_constraintEnd_toStartOf="@+id/BtnPlayPause"
+        app:layout_constraintTop_toTopOf="@+id/BtnPlayPause" />
+
+    <Button
+        android:id="@+id/BtnMicro"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_micro"
+        app:layout_constraintBottom_toTopOf="@+id/BtnConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BtnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/background_light"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text=" подключить"
+        android:textColor="@color/white"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:paddingLeft="8dp" />
+</android.support.constraint.ConstraintLayout>
